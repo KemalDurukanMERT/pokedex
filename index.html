@@ -92,7 +92,7 @@
         class="col-12 d-flex justify-content-end mb-4 mt-2 foundedFavs"
       ></div>
 
-      <div class="row gap-4 justify-content-center"></div>
+      <div class="row gap-4 justify-content-center mb-4"></div>
     </div>
 
     <script src="app.js"></script>
@@ -103,30 +103,6 @@
       crossorigin="anonymous"
     ></script>
 
-
-
-    <div class="card shadow text-center justify-content-center" style=`width: 18rem; background: ${color}`>
-      <div  class="d-flex align-items-center justify-content-between">
-      <h5 class="d-flex mt-2 mr-1"><span class=`badge bg-${
-        bgColor ? bgColor : ""
-      }`>${type.toUpperCase()}</span></h5>
-      <i class="fa-regular fa-heart text-danger"></i>
-      </div>
-          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${
-            poke.id
-          }.png" class="card-img-top" alt="...">
-          <div class="card-body">
-          <h2 class="pokeName">${poke.name.toUpperCase()}</h2>
-          <p class="card-text" id="pokeIds">#${poke.id}</p>
-          <p class="card-text"><b>Weight: </b><span class="kg">${
-            poke.weight
-          }</span> Kg</p>
-          <p class="card-text"><b>Height: </b>${(poke.height / 3.28).toFixed(
-            3
-          )} m</p>
-          <p class="card-text"><b>Type: </b>${poke.types[0].type.name}</p>        
-          </div>
-    </div>
   </body>
 </html>
 
